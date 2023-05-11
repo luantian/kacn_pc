@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>优惠券</title>
+    <defs>
+        <linearGradient x1="14.2825776%" y1="17.0057543%" x2="76.3678996%" y2="92.320119%" id="linearGradient-1">
+            <stop stop-color="#FF9A9A" offset="0%"></stop>
+            <stop stop-color="#FF5C5C" offset="15.5112767%"></stop>
+            <stop stop-color="#FF2929" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="20" height="20" rx="10"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFE5E5" offset="100%"></stop>
+        </linearGradient>
+        <path d="M15.1036466,5.38466293 C15.6100865,5.38466293 16.0208955,5.78736857 16.0208955,6.2838188 L16.0208955,8.68354832 C15.2757133,8.68354832 14.6716238,9.27572201 14.6716238,10.0062053 C14.6716238,10.7366886 15.2757133,11.3288622 16.0208955,11.3288622 L16.0208955,13.7285918 C16.0208955,14.225042 15.6100865,14.6270875 15.1036466,14.6270875 L4.92299243,14.6270875 C4.41655254,14.6270875 4.00574357,14.2243818 4.00574357,13.7285918 L4.00574357,11.3288622 C4.75092577,11.3288622 5.3550153,10.7366886 5.3550153,10.0062053 C5.3550153,9.27572201 4.75092577,8.68354832 4.00574357,8.68354832 L4.00574357,6.2838188 C4.00574357,5.78736857 4.41655254,5.38466293 4.92299243,5.38466293 L15.1036466,5.38466293 Z M12.7236485,10.832412 L7.30231712,10.832412 C7.05017097,10.832752 6.83690347,11.015328 6.8026118,11.2602042 L6.79789759,11.3275419 L6.79789759,11.5189921 C6.79789759,11.7698579 6.98781255,11.9771523 7.23429792,12.010161 L7.30299058,12.0147822 L12.7243219,12.0147822 C12.9764681,12.0144422 13.1897356,11.8318662 13.2240273,11.58699 L13.2287419,11.5196523 L13.2287419,11.3282021 C13.2290677,11.0805276 13.0426521,10.8707168 12.7923411,10.8370332 L12.7236485,10.832412 Z M12.7236485,7.99894873 L7.30231712,7.99894873 C7.05017097,7.99928875 6.83690347,8.1818647 6.8026118,8.42674095 L6.79789759,8.49407861 L6.79789759,8.68552884 C6.79789759,8.93639465 6.98781255,9.14368903 7.23429792,9.17669768 L7.30299058,9.18131889 L12.7243219,9.18131889 C12.9766915,9.1809335 13.1900418,8.9980048 13.2240273,8.7528665 L13.2287419,8.68618901 L13.2287419,8.49473878 C13.2290677,8.24706433 13.0426521,8.03725348 12.7923411,8.00356994 L12.7236485,7.99894873 L12.7236485,7.99894873 Z" id="path-5"></path>
+        <filter x="-41.6%" y="-43.3%" width="183.2%" height="208.2%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="购买流程" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="公共切图" transform="translate(-586.000000, -655.000000)">
+            <g id="优惠券" transform="translate(586.000000, 655.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="蒙版" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <g id="形状" fill-rule="nonzero" mask="url(#mask-3)" transform="translate(10.013320, 10.005875) rotate(-30.000000) translate(-10.013320, -10.005875) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

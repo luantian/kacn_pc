@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>加号—黑色</title>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="公共切图" transform="translate(-307.000000, -149.000000)">
+            <g id="加号—黑色" transform="translate(307.000000, 149.000000)">
+                <rect id="矩形" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="14" height="14"></rect>
+                <path d="M7,1 C7.27614237,1 7.5,1.22385763 7.5,1.5 L7.5,6.5 L12.5,6.5 C12.7761424,6.5 13,6.72385763 13,7 C13,7.27614237 12.7761424,7.5 12.5,7.5 L7.5,7.5 L7.5,12.5 C7.5,12.7761424 7.27614237,13 7,13 C6.72385763,13 6.5,12.7761424 6.5,12.5 L6.5,7.5 L1.5,7.5 C1.22385763,7.5 1,7.27614237 1,7 C1,6.72385763 1.22385763,6.5 1.5,6.5 L6.5,6.5 L6.5,1.5 C6.5,1.22385763 6.72385763,1 7,1 Z" id="加号—蓝色" stroke="#C1C5CC" fill="#333333"></path>
+            </g>
+        </g>
+    </g>
+</svg>

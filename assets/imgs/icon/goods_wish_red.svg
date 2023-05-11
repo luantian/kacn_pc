@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>已加心愿单_icon</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="66.2589536%" id="linearGradient-1">
+            <stop stop-color="#FF215E" offset="0%"></stop>
+            <stop stop-color="#FF2D67" offset="100%"></stop>
+        </linearGradient>
+        <path d="M27,11.1111111 C27,19.3020833 15,25.5 15,25.5 C15,25.5 3,19.3263889 3,11.1111111 C3,7.46041667 5.8546875,4.5 9.375,4.5 C11.7492188,4.5 13.8210937,5.84652778 14.9179688,7.84444444 C14.953125,7.91006944 15.0445312,7.91006944 15.0796875,7.84444444 C16.1789062,5.84652778 18.2507813,4.5 20.625,4.5 C24.1453125,4.5 27,7.46041667 27,11.1111111 Z" id="path-2"></path>
+        <filter x="-14.6%" y="-16.7%" width="129.2%" height="133.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="2.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.638455051 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="购物流程" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="公共切图" transform="translate(-372.000000, -44.000000)">
+            <g id="已加心愿单_icon" transform="translate(372.000000, 44.000000)">
+                <rect id="矩形" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="30" height="30"></rect>
+                <g id="路径" fill-rule="nonzero">
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

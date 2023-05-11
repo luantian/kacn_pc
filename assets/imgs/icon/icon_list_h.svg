@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>账单地址_icon_hover</title>
+    <g id="我的" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-791.000000, -347.000000)">
+            <g id="账单地址_icon_hover" transform="translate(791.000000, 347.000000)">
+                <rect id="矩形" x="0" y="0" width="50" height="50"></rect>
+                <path d="M34.5857864,6 L41,12.4142136 L41,44 L9,44 L9,6 L34.5857864,6 Z" id="矩形备份-3" stroke="#3B8CFE" stroke-width="2" fill-opacity="0" fill="#FFFFFF"></path>
+                <rect id="矩形" fill="#B1D1FF" x="14" y="18" width="15" height="3"></rect>
+                <rect id="矩形备份" fill="#B1D1FF" x="14" y="25" width="20" height="3"></rect>
+                <rect id="矩形备份-2" fill="#B1D1FF" x="14" y="32" width="20" height="3"></rect>
+                <polyline id="路径-5" stroke="#3B8CFE" stroke-width="2" points="34 5 34 12.9841116 42 12.9841116"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>跨境贸易_icon</title>
+<defs>
+    <rect id="path-1" x="0" y="0" width="40" height="40" rx="4"></rect>
+</defs>
+<g id="PC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="公共切图" transform="translate(-666.000000, -554.000000)">
+        <g id="跨境贸易_icon" transform="translate(666.000000, 554.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="蒙版" fill-opacity="0.1" fill="#3B8CFE" xlink:href="#path-1"></use>
+            <path d="M30.31875,17.7996843 L26.20425,17.7996843 L18.843,9 L15.44675,9 L18.843,17.7996843 L11.9075,17.7996843 L9.006875,15.5662218 L7,15.5662218 L8.7095,22.2003157 L18.843,22.2003157 L15.44675,31 L18.843,31 L26.20425,22.2003157 L31.867375,22.2003157 C32.354875,22.2003157 33,22.2003157 33,21.1001578 C33,19.6385421 31.82675,17.8012627 30.31875,17.8012627 L30.31875,17.7996843 Z" id="路径" fill="#3B8CFE" fill-rule="nonzero" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</g>
+</svg>

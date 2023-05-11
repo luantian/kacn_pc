@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>分页right_可点</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="18" height="18"></rect>
+        <rect id="path-3" x="0" y="0" width="18" height="18"></rect>
+    </defs>
+    <g id="购物流程" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="公共切图" transform="translate(-857.000000, -51.000000)">
+            <g id="分页right_可点" transform="translate(857.000000, 51.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="蒙版" fill-opacity="0" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <path d="M12.5700037,6.06915336 C12.9365719,5.68404349 13.5231293,5.69242247 13.8801163,6.08786834 C14.2371034,6.4833142 14.2293363,7.11607964 13.862768,7.50118951 L9.64638219,11.9308472 C9.28665953,12.3087652 8.71334047,12.3087652 8.35361781,11.9308472 L4.13723196,7.50118951 C3.77066373,7.11607964 3.76289662,6.4833142 4.11988365,6.08786834 C4.47687068,5.69242247 5.06342811,5.68404349 5.42999634,6.06915336 L9,9.81973376 L12.5700037,6.06915336 Z" id="Path-4" fill="#333333" fill-rule="nonzero" mask="url(#mask-2)" transform="translate(9.000000, 9.000000) scale(-1, 1) rotate(90.000000) translate(-9.000000, -9.000000) "></path>
+            </g>
+            <g id="分页right_可点" transform="translate(857.000000, 51.000000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="蒙版" fill-opacity="0" fill="#FFFFFF" xlink:href="#path-3"></use>
+                <path d="M12.5700037,6.06915336 C12.9365719,5.68404349 13.5231293,5.69242247 13.8801163,6.08786834 C14.2371034,6.4833142 14.2293363,7.11607964 13.862768,7.50118951 L9.64638219,11.9308472 C9.28665953,12.3087652 8.71334047,12.3087652 8.35361781,11.9308472 L4.13723196,7.50118951 C3.77066373,7.11607964 3.76289662,6.4833142 4.11988365,6.08786834 C4.47687068,5.69242247 5.06342811,5.68404349 5.42999634,6.06915336 L9,9.81973376 L12.5700037,6.06915336 Z" id="Path-4" fill="#333333" fill-rule="nonzero" mask="url(#mask-4)" transform="translate(9.000000, 9.000000) scale(-1, 1) rotate(90.000000) translate(-9.000000, -9.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

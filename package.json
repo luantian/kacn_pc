@@ -1,0 +1,39 @@
+{
+    "name": "nuxt-app",
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "devDependencies": {
+        "babel-plugin-transform-typescript-metadata": "^0.3.2",
+        "nuxt": "^3.4.0",
+        "sass": "^1.62.0"
+    },
+    "dependencies": {
+        "@element-plus/nuxt": "^1.0.4",
+        "@nuxt/types": "^2.16.3",
+        "@nuxt/typescript-build": "^3.0.1",
+        "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
+        "@pinia/nuxt": "^0.4.8",
+        "@types/node": "^18.15.11",
+        "@vitejs/plugin-vue": "^4.2.1",
+        "@vueuse/core": "^9.13.0",
+        "@vueuse/nuxt": "^9.13.0",
+        "@xstate/vue": "^2.0.0",
+        "element-plus": "^2.3.3",
+        "inversify": "^6.0.1",
+        "js-cookie": "^3.0.1",
+        "lodash": "^4.17.21",
+        "moment": "^2.29.4",
+        "normalize.css": "^8.0.1",
+        "pinia": "^2.0.34",
+        "qs": "^6.11.0",
+        "reflect-metadata": "^0.1.13",
+        "swiper": "5.4.5",
+        "xstate": "^4.37.1"
+    }
+}

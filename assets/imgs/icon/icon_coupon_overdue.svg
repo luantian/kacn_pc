@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="60px" viewBox="0 0 70 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>已过期备份 2</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="70" height="60"></rect>
+        <circle id="path-3" cx="35.1666667" cy="35.1666667" r="29.1666667"></circle>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="58.3333333" height="58.3333333" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="我的" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="优惠券" transform="translate(-693.000000, -974.000000)">
+            <g id="编组-10" transform="translate(283.000000, 380.000000)">
+                <g id="02" transform="translate(0.000000, 354.000000)">
+                    <g id="已过期备份-2" transform="translate(410.000000, 240.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#D8D8D8" opacity="0" xlink:href="#path-1"></use>
+                        <g id="已使用" mask="url(#mask-2)">
+                            <g transform="translate(35.000000, 35.000000) rotate(-20.000000) translate(-35.000000, -35.000000) ">
+                                <circle id="椭圆形" stroke="#D9D9D9" stroke-width="1.2" cx="35" cy="35" r="34.4"></circle>
+                                <use id="椭圆形-copy" stroke="#D9D9D9" mask="url(#mask-4)" stroke-width="2.4" stroke-dasharray="2.4" xlink:href="#path-3"></use>
+                                <path d="M20,44.2690491 C23.0285344,49.4893043 28.6781719,53 35.1477763,53 L35.1477763,53 C41.6416556,53 47.3094032,49.4629095 50.3295323,44.2102154 M49.9589613,26.1748407 C46.859885,21.2628946 41.3848756,18 35.1477763,18 C28.9089553,18 23.432645,21.2646963 20.3340254,26.1789087" id="形状" stroke="#D9D9D9" stroke-width="1.2" stroke-linecap="round"></path>
+                                <text id="已过期" stroke="none" font-family="PingFangSC-Medium, PingFang SC" font-size="14" font-weight="400" line-spacing="14">
+                                    <tspan x="14" y="43" fill="#999999">已过期</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

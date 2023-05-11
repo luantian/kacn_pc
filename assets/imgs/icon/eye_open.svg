@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>睁眼_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="20" height="20"></rect>
+        <rect id="path-3" x="0" y="0" width="20" height="20"></rect>
+    </defs>
+    <g id="设计规范" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标" transform="translate(-270.000000, -354.000000)">
+            <g id="编组-22备份-5" transform="translate(230.000000, 354.000000)">
+                <g id="睁眼_icon" transform="translate(40.000000, 0.000000)">
+                    <g fill-rule="evenodd">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="蒙版" fill-opacity="0" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="眼睛-睁眼" fill-rule="evenodd" transform="translate(0.000000, 2.500000)"></g>
+                    <path d="M0.599009803,9.9998658 C3.41187692,5.78806344 6.52981893,3.625 10,3.625 C13.4703974,3.625 16.5885118,5.78833314 19.4009902,10.0001342 C16.5881231,14.2119366 13.4701811,16.375 10,16.375 C6.5296026,16.375 3.41148817,14.2116669 0.599009803,9.9998658 Z" id="椭圆形" stroke="#3D4A5E"></path>
+                    <circle id="椭圆形" stroke="#3D4A5E" cx="10" cy="10" r="3.25"></circle>
+                </g>
+                <g id="睁眼_icon" transform="translate(40.000000, 0.000000)">
+                    <g>
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="蒙版" fill-opacity="0" fill="#FFFFFF" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="眼睛-睁眼" transform="translate(0.000000, 2.500000)"></g>
+                    <path d="M0.599009803,9.9998658 C3.41187692,5.78806344 6.52981893,3.625 10,3.625 C13.4703974,3.625 16.5885118,5.78833314 19.4009902,10.0001342 C16.5881231,14.2119366 13.4701811,16.375 10,16.375 C6.5296026,16.375 3.41148817,14.2116669 0.599009803,9.9998658 Z" id="椭圆形" stroke="#3D4A5E"></path>
+                    <circle id="椭圆形" stroke="#3D4A5E" cx="10" cy="10" r="3.25"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
