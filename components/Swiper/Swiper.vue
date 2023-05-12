@@ -45,7 +45,7 @@ import Banner1 from "~/assets/imgs/11.webp";
 import Banner2 from "~/assets/imgs/22.webp";
 import Banner3 from "~/assets/imgs/33.webp";
 
-const banners = reactive([Banner1, Banner2, Banner3, Banner1, Banner2]);
+const banners = reactive([Banner1, Banner2, Banner3, Banner1, Banner2, Banner3, Banner1, Banner2, Banner3]);
 
 const positions: IPosition[] = reactive(
     banners.map((item, index) => {
