@@ -42,7 +42,7 @@
             </div>
         </template>
         <template #prefix v-else>
-            <span class="iconfont" :class="`icon-${icons[type]}`"></span>
+            <span v-if="isPrefix" class="iconfont" :class="`icon-${icons[type]}`"></span>
         </template>
         <template #suffix v-if="type === Way.verifyCode">
             <div class="suffix">
@@ -76,15 +76,17 @@ const icons = reactive({
     [Way.phone]: "",
 });
 
-interface Props {
+interface IProps {
     type?: Way;
     value?: string;
     placeholder?: string;
     dropdownWidth?: string;
+    isPrefix?: boolean;
 }
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<IProps>(), {
     dropdownWidth: "384px",
+    isPrefix: true
 });
 
 const { type, value, placeholder } = props;

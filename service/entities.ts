@@ -6,13 +6,13 @@ import { TYPES } from "./types";
 @injectable()
 class Katana implements Weapon {
     public hit() {
-        return "cut!!!";
+        return "cut!!!~~";
     }
 }
 @injectable()
 class Shuriken implements ThrowableWeapon {
     public throw() {
-        return "hit!!!";
+        return "hit!!!~~";
     }
 }
 

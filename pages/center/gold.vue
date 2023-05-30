@@ -1,8 +1,5 @@
 <template>
-    <CenterWrap>
-        <div class="title-wrap">
-            <div class="title">元宝中心</div>
-        </div>
+    <CenterWrap title="元宝中心">
         <div class="my-gold-wrap">
             <div class="my-gold">
                 <div class="label">我的元宝：</div>
@@ -94,16 +91,6 @@ const tableData = [
 </script>
 
 <style lang="scss" scoped>
-.title-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    .title {
-        font-weight: 700;
-        font-size: 20px;
-    }
-}
 
 .my-gold-wrap {
     display: flex;

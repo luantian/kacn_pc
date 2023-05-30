@@ -6,6 +6,8 @@
         "cfff",
         "Confrim",
         "consts",
+        "Datasouce",
+        "Datasource",
         "Descs",
         "Enitity",
         "Esize",
@@ -26,6 +28,7 @@
         "threejs",
         "Unuse",
         "vuex",
+        "wechat",
         "xstate"
     ]
 }

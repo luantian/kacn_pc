@@ -31,7 +31,7 @@ const props = withDefaults(defineProps<IProps>(), {});
 :deep(.el-textarea__inner) {
     color: $c333;
     // border: 1px solid $cdee;
-    border-radius: 6px;
+    // border-radius: 6px;
     box-shadow: none;
     &:hover {
         box-shadow: none;

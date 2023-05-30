@@ -1,8 +1,5 @@
 <template>
-    <CenterWrap>
-        <div class="title-wrap">
-            <div class="title">我的余额</div>
-        </div>
+    <CenterWrap title="我的余额">
         <div class="balance-wrap">
             <div class="available-balance">
                 <div class="label">可用余额</div>
@@ -155,17 +152,6 @@ const onRecharge = () => {
 </script>
 
 <style lang="scss" scoped>
-.title-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    .title {
-        font-weight: 700;
-        font-size: 20px;
-    }
-}
-
 .balance-wrap {
     // border: 1px solid $cdee;
     display: flex;

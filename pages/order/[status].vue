@@ -35,7 +35,7 @@ import { Order } from "~/service/Order/Order";
 const route = useRoute();
 
 const order: Order = new Order();
-const status = route.params.status;
+const status: OrderStatus = route.params.status || OrderStatus.All;
 
 definePageMeta({
     title: "我的订单",
@@ -78,77 +78,6 @@ const handleCurrentChange = async (value: number) => {
     console.log("handleCurrentChange", value);
 };
 
-/*
-export default {
-    name: "Order",
-    middleware: ['auth'],
-    data() {
-        return {
-            active: this.$route.params.status || '100',
-            tabsData: [
-                { title: "全部订单", status: 100 },
-                { title: "待付款", status: 0 },
-                { title: "待发货", status: 1 },
-                { title: "待收货", status: 2 },
-                { title: "已完成", status: 3 },
-                { title: "退款/售后", status: 4 },
-            ],
-            pagination: {
-                page:  1,
-                limit: 10,
-                total: 1000,
-            }
-        };
-    },
-    async asyncData({$api}) {
-        const { data } = await $api.order.list();
-        return {
-            dataSource: data.records,
-            pagination: {
-                page:  data.page,
-                limit: data.limit,
-                total: data.total,
-            }
-        }
-    },
-    mounted() {
-
-    },
-    methods: {
-        async queryData() {
-            const active = Number(this.active)
-            const params = {
-                page: this.pagination.page,
-                limit: this.pagination.limit,
-            }
-            if (active !== 100) {
-                params.status = active
-            }
-            console.log('params', params);
-            const { data } = await this.$api.order.list(params);
-            this.dataSource = data.records;
-            this.pagination.page = data.page;
-            this.pagination.limit = data.limit;
-            this.pagination.total = data.total;
-        },
-        onTabClick(component) {
-            // 模拟数据
-            this.active = component.name
-            this.queryData();
-        },
-        handleCurrentChange(value) {
-            console.log('handleCurrentChange', value)
-            this.pagination.page = value;
-            this.queryData();
-        },
-        handleSizeChange(value) {
-            console.log("handleSizeChange", value);
-            this.pagination.limit = value;
-            this.queryData();
-        },
-    },
-};
-*/
 </script>
 
 <style lang="scss" scoped>

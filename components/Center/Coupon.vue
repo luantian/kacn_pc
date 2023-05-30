@@ -40,7 +40,7 @@
         </div>
 
         <div class="button-wrap" v-if="isUnused">
-            <CustomButton style="width: 115px" type="bare-primary" round
+            <CustomButton style="width: 115px" bare round
                 >去使用</CustomButton
             >
         </div>

@@ -27,6 +27,7 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
+
 /**
     基础类 开始
 */
@@ -73,8 +74,11 @@ defineProps({
         color: #62a3fe;
     }
 }
+// .el-button--primary {
+//     color: $c3b8;
+// }
 
-.el-button--bare-primary {
+.el-button--bare, .el-button--bare-primary {
     color: $c3b8;
     border-color: $c3b8;
     background: transparent;
