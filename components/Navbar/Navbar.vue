@@ -37,7 +37,6 @@
                             round
                             size="large"
                             v-model="language"
-                            :options="languages"
                             placeholder=""
                             suffix-icon="ArrowDownBold"
                             @change="changeLanguage"
@@ -165,23 +164,9 @@ import UserPhoto from "~/assets/imgs/user_photo.png";
 import WelcomeImg from "~/assets/imgs/welcome.png";
 
 import { INavbarTabData, IViewData, IViewSearch } from "~/service/Navbar/Interface";
-import { useLanguage } from "~/store/language";
 import { languages } from "~/utils/consts";
 
-const language = useLanguage();
-
-// const languages = reactive([
-//     {
-//         value: "s",
-//         label: "简体中文",
-//     },
-//     {
-//         value: "t",
-//         label: "繁体中文",
-//     },
-// ]);
-
-
+const language = useCookie('lang');
 
 interface IProps {
     fixed?: boolean;
@@ -277,6 +262,7 @@ const onCurrencyChange = (val: string) => {
 
 const changeLanguage = (val: string) => {
     console.log("changeLanguage", val);
+    useCookie('lang').value = val;
 };
 
 const goWishList = () => {
@@ -420,5 +406,8 @@ const goWishList = () => {
     top: 10px;
     right: 15px;
     background-color: $cf23;
+}
+:deep(.el-input__inner) {
+    text-align: center;
 }
 </style>

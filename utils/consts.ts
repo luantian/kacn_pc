@@ -12,12 +12,16 @@ export interface ILangeuage {
 
 export const languages: ILangeuage[] = [
     {
-        value: "s",
+        value: "zh",
         label: "简体中文",
     },
     {
-        value: "t",
+        value: "tr",
         label: "繁体中文",
+    },
+    {
+        value: "en",
+        label: "英文",
     },
 ];
 

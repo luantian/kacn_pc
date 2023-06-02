@@ -6,11 +6,11 @@ interface LanguageState {
 
 export const useLanguage = defineStore('language', {
     state: (): LanguageState => ({
-        language: ''
+        language: 'zh'
     }),
 
     actions: {
-
+        
     },
 
     persist: process.client && {

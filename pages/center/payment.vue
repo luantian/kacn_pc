@@ -1,5 +1,6 @@
 <template>
     <CenterWrap title="支付管理">
+        <!-- <div>{{ $t('login.title') }}</div> -->
         <CustomTabs
             type="three"
             v-model="state.active"
@@ -54,7 +55,27 @@
                 </div>
             </div>
             <div v-show="state.active === '快捷支付'">
-                <div class="quick-payment"></div>
+                <div class="quick-payment">
+                    <div
+                        class="quick-payment-item"
+                        :class="{ active: item.default }"
+                        v-for="(item, index) in state.quickPaymentDatasouce"
+                        :key="index"
+                    >
+                        <div class="title">{{ item.cardId }}</div>
+                        <div class="exp-date">有效期：<Time format="YYYY-MM">{{ item.EXPDate }}</Time></div>
+                        <div class="opera-button" style="text-align: right">
+                            <div>
+                                <CustomButton v-if="!item.default" link
+                                    >设为默认快捷支付</CustomButton
+                                >
+                            </div>
+                            <div>
+                                <CustomButton link>删除</CustomButton>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -76,8 +97,8 @@
         title="+Add New Billing Address"
     >
         <div class="form-wrap">
-            <el-form :model="form" label-position="top">
-                <el-form-item>
+            <el-form :model="form" :rules="rules" label-position="top">
+                <el-form-item prop="firstName">
                     <template #label>
                         <span class="label">Name</span>
                         <span class="sub-label"
@@ -98,56 +119,64 @@
                     </div>
                 </el-form-item>
 
-                <el-form-item label="Country/Region">
+                <el-form-item label="Country/Region" prop="country">
                     <div class="row-country">
                         <CustomInput
                             class="row-country-input"
-                            v-model="form.firstName"
+                            v-model="form.country"
                             placeholder="Choose your country"
                         ></CustomInput>
                         <CustomInput
                             class="row-country-input"
-                            v-model="form.lastName"
+                            v-model="form.state"
                             placeholder="State"
                         ></CustomInput>
                         <CustomInput
                             class="row-country-input"
-                            v-model="form.lastName"
+                            v-model="form.city"
                             placeholder="City"
                         ></CustomInput>
                     </div>
                 </el-form-item>
-                <el-form-item label="Address1">
+                <el-form-item label="Address1" prop="address1">
                     <el-input
                         type="textarea"
-                        v-model="form.lastName"
-                        placeholder="City"
+                        v-model="form.address1"
+                        placeholder="Street, Address, Company Name, apartment, unit, building, floor, etc"
                     ></el-input>
                 </el-form-item>
-                <el-form-item label="Address2">
+                <el-form-item label="Address2" prop="address2">
                     <el-input
                         type="textarea"
-                        v-model="form.lastName"
-                        placeholder="City"
+                        v-model="form.address2"
+                        placeholder="Street, Address, Company Name, apartment, unit, building, floor, etc"
                     ></el-input>
                 </el-form-item>
                 <div class="row">
-                    <el-form-item class="form-item" label="Phone Number">
+                    <el-form-item
+                        class="form-item"
+                        label="Phone Number"
+                        prop="phone"
+                    >
                         <el-input
-                            v-model="form.lastName"
-                            placeholder="City"
+                            v-model="form.phone"
+                            placeholder="Phone Number"
                         ></el-input>
                     </el-form-item>
-                    <el-form-item class="form-item" label="Email">
+                    <el-form-item class="form-item" label="Email" prop="email">
                         <el-input
-                            v-model="form.lastName"
-                            placeholder="City"
+                            v-model="form.email"
+                            placeholder="Email"
                         ></el-input>
                     </el-form-item>
-                    <el-form-item class="form-item" label="Post/Zip Code">
+                    <el-form-item
+                        class="form-item"
+                        label="Post/Zip Code"
+                        prop="postCode"
+                    >
                         <el-input
-                            v-model="form.lastName"
-                            placeholder="City"
+                            v-model="form.postCode"
+                            placeholder="Post/Zip Code"
                         ></el-input>
                     </el-form-item>
                 </div>
@@ -157,6 +186,7 @@
 </template>
 
 <script lang="ts" setup name="Payment">
+import type { FormRules } from "element-plus";
 import { TabPaneName } from "element-plus/es/components/tabs/src/tabs";
 
 definePageMeta({
@@ -166,6 +196,87 @@ definePageMeta({
 const form = reactive({
     firstName: "",
     lastName: "",
+    country: "",
+    state: "",
+    city: "",
+    address1: "",
+    address2: "",
+    phone: "",
+    email: "",
+    postCode: "",
+});
+
+const rules = reactive<FormRules>({
+    firstName: [
+        {
+            required: true,
+            message: "请输入firstName和lastName",
+            trigger: "blur",
+        },
+    ],
+    lastName: [
+        {
+            required: true,
+            message: "请输入firstName和lastName",
+            trigger: "blur",
+        },
+    ],
+    country: [
+        {
+            required: true,
+            message: "请输入国家",
+            trigger: "blur",
+        },
+    ],
+    state: [
+        {
+            required: true,
+            message: "请输入区域",
+            trigger: "blur",
+        },
+    ],
+    city: [
+        {
+            required: true,
+            message: "请输入城市",
+            trigger: "blur",
+        },
+    ],
+    address1: [
+        {
+            required: true,
+            message: "请输入地址1",
+            trigger: "blur",
+        },
+    ],
+    address2: [
+        {
+            required: true,
+            message: "请输入地址2",
+            trigger: "blur",
+        },
+    ],
+    phone: [
+        {
+            required: true,
+            message: "请输入手机号",
+            trigger: "blur",
+        },
+    ],
+    email: [
+        {
+            required: true,
+            message: "请输入邮箱",
+            trigger: "blur",
+        },
+    ],
+    postCode: [
+        {
+            required: true,
+            message: "请输入邮政编码",
+            trigger: "blur",
+        },
+    ],
 });
 
 const state = reactive({
@@ -209,7 +320,38 @@ const state = reactive({
             default: false,
         },
     ],
-    quickPaymentDatasouce: [{}],
+    quickPaymentDatasouce: [
+        {
+            cardId: "123123123",
+            EXPDate: 283838383838,
+            default: false,
+        },
+        {
+            cardId: "123123123",
+            EXPDate: 283838383838,
+            default: false,
+        },
+        {
+            cardId: "123123123",
+            EXPDate: 283838383838,
+            default: true,
+        },
+        {
+            cardId: "123123123",
+            EXPDate: 283838383838,
+            default: false,
+        },
+        {
+            cardId: "123123123",
+            EXPDate: 283838383838,
+            default: false,
+        },
+        {
+            cardId: "123123123",
+            EXPDate: 283838383838,
+            default: false,
+        },
+    ],
 });
 
 const onTabChange = (name: TabPaneName) => {
@@ -237,7 +379,6 @@ const openCreate = () => {
 .pagination {
     margin-top: 20px;
 }
-
 .form-wrap {
     padding: 20px;
     .sub-label {
@@ -330,5 +471,50 @@ const openCreate = () => {
 }
 
 .quick-payment {
+    display: flex;
+    flex-wrap: wrap;
+    &-item {
+        width: 238px;
+        border: 1px solid $cdee;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        padding: 30px 20px 15px;
+        box-sizing: border-box;
+        &::after {
+            display: block;
+            content: "默认";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: $c3b8;
+            color: $cfff;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+        &.active {
+            background: rgba(59, 140, 254, 0.05);
+            border: 1px solid rgba(59, 140, 254, 0.2);
+            position: relative;
+        }
+        &:nth-of-type(4n) {
+            margin-right: 0;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .exp-date {
+            padding-top: 20px;
+            padding-bottom: 40px;
+            color: $c666;
+        }
+        .opera-button {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
 </style>

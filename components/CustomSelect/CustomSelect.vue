@@ -9,7 +9,7 @@
     </el-select>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts" setup name="CustomSelect">
 
 const attrs = useAttrs();
 

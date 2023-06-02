@@ -1,4 +1,5 @@
 <template>
+    <Navbar></Navbar>
     <el-form :model="state.form" :rules="rules" ref="ruleFormRef">
         <el-form-item prop="account">
             <CustomInputType

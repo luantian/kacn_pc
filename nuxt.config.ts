@@ -32,9 +32,10 @@ export default defineNuxtConfig({
     buildModules: [
         "@nuxtjs/composition-api/module",
         ["@pinia/nuxt", { disableVuex: false }],
-        "@nuxtjs/tailwindcss"
+        "@nuxtjs/tailwindcss",
     ],
     modules: [
+        ["@nuxtjs/i18n"],
         "@element-plus/nuxt",
         "@pinia/nuxt",
         "@pinia-plugin-persistedstate/nuxt",
@@ -47,23 +48,20 @@ export default defineNuxtConfig({
         ],
     },
     build: {
-        publicPath: "/__kacn__/",
+        // publicPath: "/__kacn__/",
         transpile: [/^element-plus/],
         extractCSS: { allChunks: true },
     },
     piniaPersistedstate: {
         storage: "sessionStorage",
     },
-    elementPlus: {
-
-    },
+    elementPlus: {},
 
     vite: {
         css: {
             preprocessorOptions: {
                 scss: {
-                    additionalData:
-                        '@import "assets/styles/global.scss";',
+                    additionalData: '@import "assets/styles/global.scss";',
                 },
             },
         },

@@ -1,39 +1,31 @@
 <template>
     <el-tag
         :class="['tag', { small, normal, big }]"
-        v-bind="$attrs"
-        v-on="$listeners"
+        v-bind="attrs"
     >
         <slot></slot>
         <img class="img" v-if="imgUrl" :src="imgUrl" alt="标签图片" />
     </el-tag>
 </template>
 
-<script>
-export default {
-    name: "CustomTag",
-    props: {
-        imgUrl: {
-            type: String,
-            default: "",
-        },
-        small: {
-            type: Boolean,
-            default: false,
-        },
-        normal: {
-            type: Boolean,
-            default: false,
-        },
-        big: {
-            type: Boolean,
-            default: false,
-        },
-    },
-    data() {
-        return {};
-    },
-};
+<script lang="ts" setup name="CustomTag">
+
+const attrs = useAttrs();
+
+interface IProps {
+    imgUrl: string;
+    small: boolean;
+    normal: boolean;
+    big: boolean;
+}
+
+const props = withDefaults(defineProps<IProps>(), {
+    imgUrl: '',
+    small: false,
+    normal: false,
+    big: false,
+});
+
 </script>
 
 <style lang="scss" scoped>

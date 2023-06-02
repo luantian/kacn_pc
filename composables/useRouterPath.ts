@@ -76,7 +76,6 @@ export const useRouterPath = () => ({
 
 */
 
-
 export const useRouterPath = () => ([
     {
         path: () => "/",
@@ -84,5 +83,6 @@ export const useRouterPath = () => ([
     },
     {
         path: "/login",
+        name: '登录'
     }
 ])
